@@ -26,11 +26,13 @@ public class Tarjeta {
     private LocalDate fechaVencimiento;
     @Column(name = "direccionFacturacion", nullable = false)
     private String direccionFacturacion;
+    @Column(name = "prueba", nullable = false)
+    private String prueba;
 
     public Tarjeta() {
     }
 
-    public Tarjeta(int idTarjeta, String titular, String tipo, String numero, int ccv, LocalDate fechaVencimiento, String direccionFacturacion) {
+    public Tarjeta(int idTarjeta, String titular, String tipo, String numero, int ccv, LocalDate fechaVencimiento, String direccionFacturacion, String prueba ) {
         this.idTarjeta = idTarjeta;
         this.titular = titular;
         this.tipo = tipo;
@@ -38,6 +40,7 @@ public class Tarjeta {
         this.ccv = ccv;
         this.fechaVencimiento = fechaVencimiento;
         this.direccionFacturacion = direccionFacturacion;
+        this.prueba = prueba;
     }
 
     public int getIdTarjeta() {
@@ -94,5 +97,13 @@ public class Tarjeta {
 
     public void setDireccionFacturacion(String direccionFacturacion) {
         this.direccionFacturacion = direccionFacturacion;
+    }
+
+    public String getPrueba() {
+        return prueba;
+    }
+
+    public void setPrueba(String prueba) {
+        this.prueba = prueba;
     }
 }
