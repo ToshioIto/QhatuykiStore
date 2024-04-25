@@ -30,7 +30,7 @@ public class Tarjeta {
     public Tarjeta() {
     }
 
-    public Tarjeta(int idTarjeta, String titular, String tipo, String numero, int ccv, LocalDate fechaVencimiento, String direccionFacturacion) {
+    public Tarjeta(int idTarjeta, String titular, String tipo, String numero, int ccv, LocalDate fechaVencimiento, String direccionFacturacion ) {
         this.idTarjeta = idTarjeta;
         this.titular = titular;
         this.tipo = tipo;
@@ -38,6 +38,7 @@ public class Tarjeta {
         this.ccv = ccv;
         this.fechaVencimiento = fechaVencimiento;
         this.direccionFacturacion = direccionFacturacion;
+
     }
 
     public int getIdTarjeta() {
@@ -95,4 +96,6 @@ public class Tarjeta {
     public void setDireccionFacturacion(String direccionFacturacion) {
         this.direccionFacturacion = direccionFacturacion;
     }
+
+
 }
